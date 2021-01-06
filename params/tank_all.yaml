@@ -1,0 +1,13 @@
+minion_leds_client:
+  ros__parameters:
+    use_sim_time: False
+    time_out: 1000
+    leds_service: "/leds_server"
+    ultrasonic_topic: "/ultrasonic_range"
+minion_leds_server:
+  ros__parameters:
+    use_sim_time: False
+    led_pin_red: 3
+    led_pin_green: 2
+    led_pin_blue: 5
+    leds_service: "/leds_server"
